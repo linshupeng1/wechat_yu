@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="wap-font-scale" content="no">
+    <meta name="author" content="zbh" />
+    <title>鲑鱼工坊_注册</title>
+    <link rel="stylesheet" href="../css/mobiscroll.custom-3.0.0-beta2.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <section class="logo"> </section>
+    <p class="text_p">亲，您还不是我们的会员，请先注册。</p>
+    <section class="register_box">
+        <div>
+            <label>姓名:</label>
+            <input type="text" placeholder="请输入真实姓名" class="name">
+        </div>
+        <div>
+            <label>性别:</label>
+            <input type="radio" name="rd" checked="checked"> 男
+            <input type="radio" name="rd" class="marle">女
+        </div>
+        <div class="clearfix"id="">
+            <label>生日:</label>
+            <input type="text"  class="time w80 birthday" placeholder="请选择出生日期"><i class="right"></i>
+        </div>
+        <div>
+            <label>手机:</label>
+            <input type="text" placeholder="请输入手机号" class="telephone">
+        </div>
+        <div class="clearfix">
+            <label>验证码:</label>
+            <input type="text" placeholder="请输入手机验证码" class="checkCode"><a href="javascript:getcode()" class="blu code">获取验证码</a></div>
+        <div class="clearfix">
+            <label>门店:</label>
+            	<input type="text"  class="w80 store-input" placeholder="请选择门店"><i class="right"></i>
+        </div>
+    </section>
+    <section class="agreement">
+        <input type="checkbox"> <span>我已阅读并同意</span><a href="javascript:;" class="blu">《会员服务协议》</a>
+    </section>
+    <a href="javascript:;" class="submit">确认提交</a>
+    <p class="line"><i class="le"></i><span class="font2">注册优惠</span><i class="ri"></i></p>
+    <p class="text_p">注册成为微会员即送<i class="coupon"></i></p>
+    <script src="../script/jquery.min.js"></script>
+    <script src="../script/mobiscroll.custom-3.0.0-beta2.min.js"></script>
+    <script src="../script/register.js"></script>
+</body>
+</html>

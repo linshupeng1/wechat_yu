@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+		<meta name="format-detection" content="telephone=no"/>
+		<meta name="format-detection" content="email=no"/>
+		<meta name="wap-font-scale" content="no"/>
+		<title>我的积分</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	</head>
+	<body>
+		<section class="my-scores">
+			<div class="scores-show">
+				<img src="../images/scores-card.png" alt="" />
+				<div class="scores">
+					<span class="num-wrap">我的积分：
+						<span class="num">16420</span>
+					</span>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-num">
+					<span class="line-through"></span>
+					<span class="num">卡号：610 00017 53746</span>
+				</div>
+				<div class="bar-code-wrap" >
+					<div class="bar-code" id="barCode"></div>
+				</div>
+				<a href="javascript:;" class="card-intro">会员卡说明</a>
+			</div>
+			<div class="scores-detail">
+				<div class="title">
+					<span>积分明细</span>
+				</div>
+				<div class="cnt">
+					<img src="../images/developing.png" alt="功能待开发" />
+					<p class="developing">功能开发中...</p>
+				</div>
+			</div>
+		</section>
+		<script src="../script/jquery.min.js"></script>
+		<script src="../script/jquery-barcode-last.min.js"></script>
+		<script type="text/javascript">
+			$("#barCode").barcode("610 00017 53746","code128",{barWidth:1, barHeight:50});
+		</script>
+	</body>
+</html>
